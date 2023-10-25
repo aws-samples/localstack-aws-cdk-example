@@ -4,7 +4,7 @@ by @maxthom
 
 # Purpose
 
-This repo aims to showcase the usage of Localstack and AAWS CDK to address specific integration challenges regarding local development where the end target is the AWS platform.
+This repo aims to showcase the usage of Localstack and AWS CDK to address specific integration challenges regarding local development where the end target is the AWS platform.
 
 The following tenets were in mind (unless you know better ones):
 
