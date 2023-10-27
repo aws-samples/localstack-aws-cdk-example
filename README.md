@@ -86,7 +86,7 @@ Where:
 
     # localstack config show
 
-# CDK ans AWS Local
+# CDK and AWS Local
 
 ## Init
 
