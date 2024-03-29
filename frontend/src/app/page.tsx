@@ -17,7 +17,7 @@ export default function Home() {
 
   const save = async () => {
     const result = await axios.post(API_URL, {
-      activity,
+      activity
     })
     setActivity("")
     await read()
@@ -78,7 +78,7 @@ export default function Home() {
           }}
           data-np-intersection-state
           data-np-mark
-          style={{ color: "black", paddingLeft: 10 }}
+          style={{ color: "black", paddingLeft: 10, border: "1px solid black" }}
         />
         <button className="w-40" onClick={save}>
           Save
