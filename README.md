@@ -20,7 +20,7 @@ The following tenets were in mind (unless you know better ones):
 1. [Docker](https://www.docker.com/)
 1. (Optional) [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 1. [Localstack](https://localstack.cloud/)
-1. (Optional) [Localstack Cockpit](https://docs.localstack.cloud/user-guide/tools/cockpit/)
+1. (Optional) [Localstack Desktop](https://docs.localstack.cloud/user-guide/tools/localstack-desktop/)
 1. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 1. [Localstack AWSLocal](https://github.com/localstack/awscli-local)
 1. [AWS CDK](https://aws.amazon.com/fr/cdk/)
@@ -41,37 +41,37 @@ The following tenets were in mind (unless you know better ones):
 
 ### Docker
 
-    # brew install docker
-    # docker --version
+    brew install docker
+    docker --version
 
 (Optional) install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 ### Localstack
 
-    # brew install localstack/tap/localstack-cli
-    # localstack --version
+    brew install localstack/tap/localstack-cli
+    localstack --version
 
-(Optional) Install [LocalStack Cockpit](https://localstack.cloud/products/cockpit/)
+(Optional) Install [LocalStack Desktop](https://docs.localstack.cloud/user-guide/tools/localstack-desktop/)
 
 ### AWS CDK & LocalStack CDK Local
 
 [Download](https://github.com/localstack/aws-cdk-local)
 
-    # npm install -g aws-cdk-local aws-cdk
+    npm install -g aws-cdk-local aws-cdk
 
 ### AWS CLI && LocalStack AWS Local
 
 [Download](https://github.com/localstack/awscli-local)
 
-    # python3 -m pip --version
-    # python3 -m pip install awscli awscli-local
-    # awslocal --version
+    python3 -m pip --version
+    python3 -m pip install awscli awscli-local
+    awslocal --version
 
 # Localstack
 
 ## Start
 
-    # localstack start -d --no-banner
+    localstack start -d --no-banner
 
 Where:
 
@@ -80,29 +80,29 @@ Where:
 
 ## Stop
 
-    # localstack stop
+    localstack stop
 
 ## Configuration get/set
 
-    # localstack config show
+    localstack config show
 
 # CDK and AWS Local
 
 ## Init
 
-    # mkdir cdk
-    # cd cdk
-    # cdklocal init --language typescript
+    mkdir cdk
+    cd cdk
+    cdklocal init --language typescript
 
 ## Bootstrap
 
-    # cd cdk
-    # cdklocal bootstrap
-    # awslocal s3 ls
+    cd cdk
+    cdklocal bootstrap
+    awslocal s3 ls
 
 ## Deploy
 
-    # cdk deploy --require-approval never
+    cdk deploy --require-approval never
 
 Where:
 
